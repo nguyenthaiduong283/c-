@@ -1,0 +1,11 @@
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\bin\Debug\ProfileStudent.exe.config
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\bin\Debug\ProfileStudent.exe
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\bin\Debug\ProfileStudent.pdb
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.csprojAssemblyReference.cache
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.Form1.resources
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.Properties.Resources.resources
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.csproj.GenerateResource.cache
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.csproj.CoreCompileInputs.cache
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.exe
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\obj\Debug\ProfileStudent.pdb
+C:\Users\kinglaptop\source\repos\Nhom1\ProfileStudent\bin\Debug\img\idollll.jpg
