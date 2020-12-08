@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileStudent", "ProfileSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV", "QLSV\QLSV.csproj", "{452503EB-5313-4F9B-8D9B-EDCACAFE905E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppQLSV", "AppQLSV\AppQLSV.csproj", "{51781E81-0E4E-4805-B7D5-267BF036D756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{452503EB-5313-4F9B-8D9B-EDCACAFE905E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{452503EB-5313-4F9B-8D9B-EDCACAFE905E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{452503EB-5313-4F9B-8D9B-EDCACAFE905E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51781E81-0E4E-4805-B7D5-267BF036D756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51781E81-0E4E-4805-B7D5-267BF036D756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51781E81-0E4E-4805-B7D5-267BF036D756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51781E81-0E4E-4805-B7D5-267BF036D756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

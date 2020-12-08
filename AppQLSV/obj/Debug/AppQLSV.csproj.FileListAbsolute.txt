@@ -1,0 +1,16 @@
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\AppQLSV.exe.config
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\AppQLSV.exe
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\AppQLSV.pdb
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\EntityFramework.dll
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\EntityFramework.xml
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.csprojAssemblyReference.cache
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.GUI.frmLopchitiet.resources
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.Form1.resources
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.Properties.Resources.resources
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.csproj.GenerateResource.cache
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.csproj.CoreCompileInputs.cache
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.csproj.CopyComplete
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.exe
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.pdb
