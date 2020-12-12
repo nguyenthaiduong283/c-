@@ -18,8 +18,9 @@ namespace AppQLSV
         {
             InitializeComponent();
             gridlophoc.AutoGenerateColumns = false;
-            dataGridView2.AutoGenerateColumns = false;
+            gridSinhVien.AutoGenerateColumns = false;
             LoadDanhSachLopHoc();
+            LoadDanhSachSinhVien();
         }
 
         private void LoadDanhSachLopHoc()
@@ -28,6 +29,13 @@ namespace AppQLSV
             var ls = db.Classrooms.OrderBy(e => e.Name).ToList();
             bdsLopHoc.DataSource = ls;
             gridlophoc.DataSource = bdsLopHoc;
+        }
+        void LoadDanhSachSinhVien()
+        {
+            AppQLSVDBContext db = new AppQLSVDBContext();
+            var ls = db.Students.ToList();
+            bdsSinhVien.DataSource = ls;
+            gridSinhVien.DataSource = bdsSinhVien;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -91,7 +99,61 @@ namespace AppQLSV
                 var db = new AppQLSVDBContext();
                 var dsSV = db.Students.Where(t => t.IDClassroom == lopDangChon.ID).ToList();
                 bdsSinhVien.DataSource = dsSV;
-                dataGridView2.DataSource = bdsSinhVien;
+                gridSinhVien.DataSource = bdsSinhVien;
+            }
+        }
+
+        private void btnThemSv_Click(object sender, EventArgs e)
+        {
+                var f = new frmSinhVienChiTiet();
+                if (f.ShowDialog() == DialogResult.OK)
+                {
+                    LoadDanhSachSinhVien();
+                }
+            
+        }
+
+        private void btnXoaSV_Click(object sender, EventArgs e)
+        {
+            var sinhVienDangChon = bdsSinhVien.Current as Student;
+            var ten = sinhVienDangChon.FirstName + sinhVienDangChon.LastName;
+            if (sinhVienDangChon != null)
+            {
+                var rs = MessageBox.Show(string.Format("Bạn có thực sự muốn xóa sinh viên {0} không?", ten), "Chú ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (rs == DialogResult.OK)
+                {
+                    AppQLSVDBContext db = new AppQLSVDBContext();
+                    var sv = db.Students.Where(a => a.ID == sinhVienDangChon.ID).FirstOrDefault();
+                    if (sv != null)
+                    {
+                        db.Students.Remove(sv);
+                        db.SaveChanges();
+                        LoadDanhSachSinhVien();
+                    }
+                }
+            }
+        }
+
+        private void bdsSinhVien_CurrentChanged(object sender, EventArgs e)
+        {
+            var sinhVienDangChon = bdsSinhVien.Current as Student;
+            if (sinhVienDangChon != null)
+            {
+                var db = new AppQLSVDBContext();
+
+            }
+        }
+
+        private void btnSuaSV_Click(object sender, EventArgs e)
+        {
+            var sinhVienDangChon = bdsSinhVien.Current as Student;
+            if (sinhVienDangChon != null)
+            {
+                var f = new frmSinhVienChiTiet(sinhVienDangChon);
+                if (f.ShowDialog() == DialogResult.OK)
+                {
+                    LoadDanhSachSinhVien();
+                }
             }
         }
     }

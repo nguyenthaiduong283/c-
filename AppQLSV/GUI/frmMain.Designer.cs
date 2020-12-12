@@ -31,34 +31,34 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.gridlophoc = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.btnthemlop = new System.Windows.Forms.ToolStripButton();
-            this.btnsualop = new System.Windows.Forms.ToolStripButton();
-            this.btnxoalop = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.btnxoalop = new System.Windows.Forms.ToolStripButton();
+            this.btnsualop = new System.Windows.Forms.ToolStripButton();
+            this.btnthemlop = new System.Windows.Forms.ToolStripButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.gridSinhVien = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.btnXoaSV = new System.Windows.Forms.ToolStripButton();
+            this.btnSuaSV = new System.Windows.Forms.ToolStripButton();
+            this.btnThemSv = new System.Windows.Forms.ToolStripButton();
             this.bdsLopHoc = new System.Windows.Forms.BindingSource(this.components);
             this.bdsSinhVien = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridlophoc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSinhVien)).BeginInit();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdsLopHoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsSinhVien)).BeginInit();
@@ -74,16 +74,6 @@
             this.panel1.Size = new System.Drawing.Size(300, 450);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dataGridView2);
-            this.panel2.Controls.Add(this.toolStrip2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(638, 450);
-            this.panel2.TabIndex = 1;
-            // 
             // gridlophoc
             // 
             this.gridlophoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -96,21 +86,18 @@
             this.gridlophoc.Size = new System.Drawing.Size(300, 425);
             this.gridlophoc.TabIndex = 0;
             // 
-            // dataGridView2
+            // Column1
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 25);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(638, 425);
-            this.dataGridView2.TabIndex = 0;
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "Name";
+            this.Column1.HeaderText = "Tên Lớp";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Room";
+            this.Column2.HeaderText = "Phòng Học";
+            this.Column2.Name = "Column2";
             // 
             // toolStrip1
             // 
@@ -131,15 +118,15 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(111, 22);
             this.toolStripLabel1.Text = "Danh Sách Lớp Học";
             // 
-            // btnthemlop
+            // btnxoalop
             // 
-            this.btnthemlop.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnthemlop.Image = ((System.Drawing.Image)(resources.GetObject("btnthemlop.Image")));
-            this.btnthemlop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthemlop.Name = "btnthemlop";
-            this.btnthemlop.Size = new System.Drawing.Size(58, 22);
-            this.btnthemlop.Text = "Thêm";
-            this.btnthemlop.Click += new System.EventHandler(this.btnthemlop_Click);
+            this.btnxoalop.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnxoalop.Image = ((System.Drawing.Image)(resources.GetObject("btnxoalop.Image")));
+            this.btnxoalop.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoalop.Name = "btnxoalop";
+            this.btnxoalop.Size = new System.Drawing.Size(47, 22);
+            this.btnxoalop.Text = "Xóa";
+            this.btnxoalop.Click += new System.EventHandler(this.btnxoalop_Click);
             // 
             // btnsualop
             // 
@@ -151,74 +138,41 @@
             this.btnsualop.Text = "Sửa";
             this.btnsualop.Click += new System.EventHandler(this.btnsualop_Click);
             // 
-            // btnxoalop
+            // btnthemlop
             // 
-            this.btnxoalop.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnxoalop.Image = ((System.Drawing.Image)(resources.GetObject("btnxoalop.Image")));
-            this.btnxoalop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnxoalop.Name = "btnxoalop";
-            this.btnxoalop.Size = new System.Drawing.Size(47, 22);
-            this.btnxoalop.Text = "Xóa";
-            this.btnxoalop.Click += new System.EventHandler(this.btnxoalop_Click);
+            this.btnthemlop.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnthemlop.Image = ((System.Drawing.Image)(resources.GetObject("btnthemlop.Image")));
+            this.btnthemlop.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthemlop.Name = "btnthemlop";
+            this.btnthemlop.Size = new System.Drawing.Size(58, 22);
+            this.btnthemlop.Text = "Thêm";
+            this.btnthemlop.Click += new System.EventHandler(this.btnthemlop_Click);
             // 
-            // toolStrip2
+            // panel2
             // 
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel2,
-            this.toolStripButton6,
-            this.toolStripButton5,
-            this.toolStripButton4});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(638, 25);
-            this.toolStrip2.TabIndex = 1;
-            this.toolStrip2.Text = "toolStrip2";
+            this.panel2.Controls.Add(this.gridSinhVien);
+            this.panel2.Controls.Add(this.toolStrip2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(638, 450);
+            this.panel2.TabIndex = 1;
             // 
-            // toolStripLabel2
+            // gridSinhVien
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(115, 22);
-            this.toolStripLabel2.Text = "Danh Sách Sinh Viên";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(58, 22);
-            this.toolStripButton4.Text = "Thêm";
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(46, 22);
-            this.toolStripButton5.Text = "Sửa";
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(47, 22);
-            this.toolStripButton6.Text = "Xóa";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "Name";
-            this.Column1.HeaderText = "Tên Lớp";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Room";
-            this.Column2.HeaderText = "Phòng Học";
-            this.Column2.Name = "Column2";
+            this.gridSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridSinhVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.gridSinhVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridSinhVien.Location = new System.Drawing.Point(0, 25);
+            this.gridSinhVien.Name = "gridSinhVien";
+            this.gridSinhVien.Size = new System.Drawing.Size(638, 425);
+            this.gridSinhVien.TabIndex = 0;
             // 
             // Column3
             // 
@@ -257,9 +211,62 @@
             this.Column8.HeaderText = "Giới Tính";
             this.Column8.Name = "Column8";
             // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel2,
+            this.btnXoaSV,
+            this.btnSuaSV,
+            this.btnThemSv});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(638, 25);
+            this.toolStrip2.TabIndex = 1;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(115, 22);
+            this.toolStripLabel2.Text = "Danh Sách Sinh Viên";
+            // 
+            // btnXoaSV
+            // 
+            this.btnXoaSV.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnXoaSV.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaSV.Image")));
+            this.btnXoaSV.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnXoaSV.Name = "btnXoaSV";
+            this.btnXoaSV.Size = new System.Drawing.Size(47, 22);
+            this.btnXoaSV.Text = "Xóa";
+            this.btnXoaSV.Click += new System.EventHandler(this.btnXoaSV_Click);
+            // 
+            // btnSuaSV
+            // 
+            this.btnSuaSV.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSuaSV.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaSV.Image")));
+            this.btnSuaSV.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSuaSV.Name = "btnSuaSV";
+            this.btnSuaSV.Size = new System.Drawing.Size(46, 22);
+            this.btnSuaSV.Text = "Sửa";
+            this.btnSuaSV.Click += new System.EventHandler(this.btnSuaSV_Click);
+            // 
+            // btnThemSv
+            // 
+            this.btnThemSv.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnThemSv.Image = ((System.Drawing.Image)(resources.GetObject("btnThemSv.Image")));
+            this.btnThemSv.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThemSv.Name = "btnThemSv";
+            this.btnThemSv.Size = new System.Drawing.Size(58, 22);
+            this.btnThemSv.Text = "Thêm";
+            this.btnThemSv.Click += new System.EventHandler(this.btnThemSv_Click);
+            // 
             // bdsLopHoc
             // 
             this.bdsLopHoc.CurrentChanged += new System.EventHandler(this.bdsLopHoc_CurrentChanged);
+            // 
+            // bdsSinhVien
+            // 
+            this.bdsSinhVien.CurrentChanged += new System.EventHandler(this.bdsSinhVien_CurrentChanged);
             // 
             // Form1
             // 
@@ -273,12 +280,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridlophoc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSinhVien)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdsLopHoc)).EndInit();
@@ -299,7 +306,7 @@
         private System.Windows.Forms.ToolStripButton btnsualop;
         private System.Windows.Forms.ToolStripButton btnthemlop;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView gridSinhVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
@@ -308,9 +315,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton btnXoaSV;
+        private System.Windows.Forms.ToolStripButton btnSuaSV;
+        private System.Windows.Forms.ToolStripButton btnThemSv;
         private System.Windows.Forms.BindingSource bdsLopHoc;
         private System.Windows.Forms.BindingSource bdsSinhVien;
     }

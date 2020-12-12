@@ -14,3 +14,4 @@ C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.csproj.CoreComp
 C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.csproj.CopyComplete
 C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.exe
 C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.pdb
+C:\Users\kinglaptop\source\repos\Nhom1\AppQLSV\obj\Debug\AppQLSV.GUI.frmSinhVienChiTiet.resources
