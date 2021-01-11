@@ -1,4 +1,4 @@
-namespace AppQLSV.DAL
+﻿namespace AppQLSV.DAL
 {
     using System;
     using System.Collections.Generic;
@@ -30,5 +30,32 @@ namespace AppQLSV.DAL
         public string IDClassroom { get; set; }
 
         public virtual Classroom Classroom { get; set; }
+
+        public string GenderString
+        {
+            get
+            {
+                if (Gender.HasValue)
+                {
+                    if (Gender.Value == 0)
+                        return "Nam";
+                    if (Gender.Value == 1)
+                        return "Nữ";
+                    return "Khác";
+                }
+                else
+                    return "Không xác định";
+            }
+        }
+        [NotMapped]
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
     }
+
+
 }

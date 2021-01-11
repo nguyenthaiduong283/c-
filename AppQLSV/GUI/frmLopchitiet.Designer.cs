@@ -107,6 +107,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmLopchitiet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLopchitiet";
             this.Load += new System.EventHandler(this.frmLopchitiet_Load);
             this.ResumeLayout(false);

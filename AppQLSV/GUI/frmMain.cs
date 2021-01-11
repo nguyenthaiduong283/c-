@@ -23,10 +23,19 @@ namespace AppQLSV
             LoadDanhSachSinhVien();
         }
 
-        private void LoadDanhSachLopHoc()
+        void LoadDanhSachLopHoc()
         {
             AppQLSVDBContext db = new AppQLSVDBContext();
-            var ls = db.Classrooms.OrderBy(e => e.Name).ToList();
+            var ls = db.Classrooms.Select(e => new ClassRoomViewModel
+            {
+                ID = e.ID,
+                Name = e.Name,
+                Room = e.Room,
+                TotalStudent = e.Students.Count,
+                TotalFemale = e.Students.Where(t => t.Gender == 1).Count(),
+                TotalMale = e.Students.Where(t => t.Gender == 0).Count()
+
+            }).OrderBy(e => e.Name).ToList();
             bdsLopHoc.DataSource = ls;
             gridlophoc.DataSource = bdsLopHoc;
         }
@@ -49,6 +58,7 @@ namespace AppQLSV
             if (f.ShowDialog() == DialogResult.OK)
             {
                 LoadDanhSachLopHoc();
+
             }
         }
 
@@ -109,6 +119,7 @@ namespace AppQLSV
                 if (f.ShowDialog() == DialogResult.OK)
                 {
                     LoadDanhSachSinhVien();
+                
                 }
             
         }
@@ -155,6 +166,16 @@ namespace AppQLSV
                     LoadDanhSachSinhVien();
                 }
             }
+        }
+
+        private void gridlophoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gridSinhVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

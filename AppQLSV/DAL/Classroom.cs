@@ -28,4 +28,19 @@ namespace AppQLSV.DAL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Student> Students { get; set; }
     }
+
+    public class ClassRoomViewModel
+    {
+        public string ID { get; set; }
+
+        public string Name { get; set; }
+
+        public string Room { get; set; }
+
+        public int TotalStudent { get; set; }
+
+        public int TotalMale { get; set; }
+
+        public int TotalFemale { get; set; }
+    }
 }
